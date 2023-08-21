@@ -1,5 +1,5 @@
 # Jantar dos Filósofos
- Este projeto foi concebido e implementado como parte da disciplina de Programação Concorrente, realizada durante o terceiro semestre do curso de Ciência da Computação na Universidade Estadual da Bahia (UESB), fazendo uso da linguagem de programação Java.
+ Este projeto foi concebido e implementado como parte da disciplina de Programação Concorrente, realizada durante o terceiro semestre do curso de Ciência da Computação na Universidade Estadual do Sudoeste da Bahia (UESB), fazendo uso da linguagem de programação Java.
 
 # Sobre
 
