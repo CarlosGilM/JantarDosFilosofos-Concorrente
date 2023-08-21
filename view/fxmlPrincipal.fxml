@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.controllerGeral">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/bgPrincipal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="garfo1" fitHeight="54.0" fitWidth="11.0" layoutX="576.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/garfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="garfo0" fitHeight="54.0" fitWidth="11.0" layoutX="471.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true" rotate="65.0">
+         <image>
+            <Image url="@../assets/garfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="garfo2" fitHeight="54.0" fitWidth="11.0" layoutX="672.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" rotate="-65.0">
+         <image>
+            <Image url="@../assets/garfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="garfo4" fitHeight="54.0" fitWidth="11.0" layoutX="509.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" rotate="140.0">
+         <image>
+            <Image url="@../assets/garfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="garfo3" fitHeight="54.0" fitWidth="11.0" layoutX="641.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" rotate="-140.0">
+         <image>
+            <Image url="@../assets/garfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="estado3" fitHeight="23.0" fitWidth="133.0" layoutX="513.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/estadosF3/pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="estado4" fitHeight="150.0" fitWidth="61.0" layoutX="297.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/estadosF4/pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="estado2" fitHeight="150.0" fitWidth="58.0" layoutX="802.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/estadosF2/pensando.png" />
+         </image></ImageView>
+      <ImageView fx:id="estado0" fitHeight="90.0" fitWidth="112.0" layoutX="362.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/estadosF0/pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="estado1" fitHeight="88.0" fitWidth="114.0" layoutX="678.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/estadosF1/pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comendo0" fitHeight="61.0" fitWidth="65.0" layoutX="475.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/GarfosComendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comendo1" fitHeight="61.0" fitWidth="65.0" layoutX="618.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" rotate="-70.0" visible="false">
+         <image>
+            <Image url="@../assets/GarfosComendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comendo2" fitHeight="61.0" fitWidth="65.0" layoutX="661.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" rotate="-137.0" visible="false">
+         <image>
+            <Image url="@../assets/GarfosComendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comendo3" fitHeight="61.0" fitWidth="65.0" layoutX="549.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" rotate="143.1" visible="false">
+         <image>
+            <Image url="@../assets/GarfosComendo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comendo4" fitHeight="61.0" fitWidth="65.0" layoutX="431.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" rotate="74.1" visible="false">
+         <image>
+            <Image url="@../assets/GarfosComendo.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderPensando3" blockIncrement="3.0" layoutX="106.0" layoutY="129.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderComendo3" blockIncrement="3.0" layoutX="106.0" layoutY="172.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderPensando4" blockIncrement="3.0" layoutX="106.0" layoutY="229.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderComendo4" blockIncrement="3.0" layoutX="106.0" layoutY="272.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderPensando0" blockIncrement="3.0" layoutX="106.0" layoutY="329.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderComendo0" blockIncrement="3.0" layoutX="106.0" layoutY="372.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderPensando1" blockIncrement="3.0" layoutX="106.0" layoutY="430.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderComendo1" blockIncrement="3.0" layoutX="106.0" layoutY="473.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderPensando2" blockIncrement="3.0" layoutX="106.0" layoutY="529.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Slider fx:id="sliderComendo2" blockIncrement="3.0" layoutX="106.0" layoutY="572.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="89.0" rotate="-180.0" value="5.0" />
+      <Button fx:id="pausar3" layoutX="185.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#clickPausar3" prefHeight="27.0" prefWidth="80.0" rotate="90.0" style="-fx-background-color: #1e587f; -fx-background-radius: 10; -fx-border-color: #2980b9; -fx-border-width: 3; -fx-border-radius: 10;" text="Pausar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="pausar4" layoutX="185.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#clickPausar4" prefHeight="27.0" prefWidth="80.0" rotate="90.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 10; -fx-border-color: #59e9cc; -fx-border-width: 3; -fx-border-radius: 10;" text="Pausar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="pausar0" layoutX="185.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#clickPausar0" prefHeight="27.0" prefWidth="80.0" rotate="90.0" style="-fx-background-color: #e6eaeb; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-width: 3; -fx-border-radius: 10;" text="Pausar" textAlignment="CENTER" textFill="#979797">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="pausar1" layoutX="185.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#clickPausar1" prefHeight="27.0" prefWidth="80.0" rotate="90.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 10; -fx-border-color: #e37367; -fx-border-width: 3; -fx-border-radius: 10;" text="Pausar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="pausar2" layoutX="185.0" layoutY="536.0" mnemonicParsing="false" onMouseClicked="#clickPausar2" prefHeight="27.0" prefWidth="80.0" rotate="90.0" style="-fx-background-color: #f1c40f; -fx-background-radius: 10; -fx-border-color: #f3dc7e; -fx-border-width: 3; -fx-border-radius: 10;" text="Pausar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="reiniciar" layoutX="68.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#Reiniciar" prefHeight="14.0" prefWidth="114.0" style="-fx-background-color: #ffeedb;" text="Reiniciar" textFill="#50220e">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
